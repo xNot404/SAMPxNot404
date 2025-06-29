@@ -280,27 +280,24 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #111, #1a1a1a, #111); /* gradasi gelap */
-  padding: 8px 0;
+  background-color: #111; /* hitam elegan */
+  padding: 10px 0;
   overflow: hidden;
   z-index: 9999;
-  border-top: 1px solid #444;
-  box-shadow: 0 -2px 12px rgba(255, 215, 0, 0.2);
+  border-top: 1px solid #333;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .marquee-inner {
   white-space: nowrap;
   display: inline-block;
   padding-left: 100%;
-  animation: slide-left 25s linear infinite;
+  animation: slide-left 20s linear infinite;
   font-family: 'Segoe UI', sans-serif;
   font-size: 14px;
-  font-weight: bold;
-  background: linear-gradient(to right, #facc15, #ffffff, #facc15);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: slide-left 25s linear infinite, glowtext 6s ease-in-out infinite;
+  font-weight: 600;
+  color: #facc15; /* kuning emas */
+  letter-spacing: 0.5px;
 }
 
 @keyframes slide-left {
@@ -309,15 +306,6 @@
   }
   to {
     transform: translateX(-100%);
-  }
-}
-
-@keyframes glowtext {
-  0%, 100% {
-    text-shadow: 0 0 5px #facc15, 0 0 10px #fff, 0 0 15px #facc15;
-  }
-  50% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #facc15, 0 0 25px #fff;
   }
 }
 
